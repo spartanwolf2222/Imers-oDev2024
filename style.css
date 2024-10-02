@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh
+}
+
+header {
+    font-size: 30px;
+}
+
+.pesquisa {
+    padding: 10px;
+}
+
+input {
+    width: 40%;
+    border-radius: 30px;
+    height: 40px;
+    text-align: center;
+}
+
+button {
+    border: solid 2px;
+    border-radius: 40px;
+    height: 30px;
+    background-color:aqua;
+    margin: 30px;
+}
+
+.resultado {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #222831;
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; 
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.descricao-meta {
+    color: #45474B;
+    margin: 0.5rem 0; 
+}
+
+footer {
+    background-color: #f0f0f0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
